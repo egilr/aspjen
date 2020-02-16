@@ -6,6 +6,11 @@ pipeline {
             bat 'dotnet build'
          }
       }
+      stage('Test') {
+         steps {
+            bat 'dotnet test'
+         }
+      }
       stage('Publish') {
          steps {
             bat 'dotnet publish -o publish -c Release -r win-x64 /p:PublishSingleFile=true'
