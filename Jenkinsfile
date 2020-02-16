@@ -1,6 +1,12 @@
 pipeline {
    agent any
    stages {
+   stage('Git') {
+            steps {
+                step([$class: 'WsCleanup'])
+                checkout scm
+            }
+        }
 /*
         stage('WSCleanup') {
             steps {
