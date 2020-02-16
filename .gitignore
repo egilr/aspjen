@@ -14,6 +14,7 @@ vcap-local.json
 *.userprefs
 
 # Build results
+publish/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/

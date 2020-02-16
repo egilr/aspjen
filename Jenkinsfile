@@ -13,7 +13,7 @@ pipeline {
       }
       stage('Publish') {
          steps {
-            bat 'dotnet publish -o publish -c Release -r win-x64 /p:PublishSingleFile=true'
+            bat 'dotnet publish aspjen.csproj -o publish -c Release -r win-x64 /p:PublishSingleFile=true'
          }
       }
       stage('Dir') {
