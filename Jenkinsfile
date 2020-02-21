@@ -51,14 +51,5 @@ pipeline {
             bat 'Dir'
          }
       }
-      stage('Mail') {
-         steps {
-            echo '----------------------------------------------------------------------------'
-            emailext body: 'Testing..', subject: 'Testing....', to: 'egil.larsen@dk.ibm.com'
-            echo '----------------------------------------------------------------------------'
-            bat 'Dir'
-         }
-      }
-
    }
 }
